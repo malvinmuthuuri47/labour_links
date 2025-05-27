@@ -234,7 +234,7 @@
 
               try {
                 const response = await fetch(
-                  "http://localhost:3306/api/login",
+                  "http://localhost:3307/api/login",
                   {
                     method: "POST",
                     headers: {
@@ -265,8 +265,8 @@
                   setTimeout(() => {
                     window.location.href =
                       data.user_type === "client"
-                        ? "client-dashboard.html"
-                        : "worker-dashboard.html";
+                        ? "clientdashboard.html"
+                        : "workersdashboard.html";
                   }, 1000);
                 } else {
                   errorDiv.textContent =

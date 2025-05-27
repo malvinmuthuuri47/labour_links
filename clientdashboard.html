@@ -302,9 +302,9 @@
             
             // Fetch dashboard data
             Promise.all([
-                fetch('http://127.0.0.1:5000/api/client/stats').then(res => res.json()),
-                fetch('http://127.0.0.1:5000/api/client/jobs').then(res => res.json()),
-                fetch('http://127.0.0.1:5000/api/client/applicants').then(res => res.json())
+                fetch('http://127.0.0.1:3307/api/client/stats').then(res => res.json()),
+                fetch('http://127.0.0.1:3307/api/client/jobs').then(res => res.json()),
+                fetch('http://127.0.0.1:3307/api/client/applicants').then(res => res.json())
             ])
             .then(([stats, jobs, applicants]) => {
                 loadingDiv.style.display = 'none';
