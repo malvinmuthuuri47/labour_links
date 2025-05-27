@@ -33,8 +33,8 @@ fi
 # Open browser
 echo -e "\033[1;32mOpening website...\033[0m"
 case "$(uname -s)" in
-    Linux*)  xdg-open "http://localhost:3308/signup.html" ;;
-    Darwin*) open "http://localhost:3308/signup.html" ;;
+    Linux*)  xdg-open "http://localhost:3308/landing.html" ;;
+    Darwin*) open "http://localhost:3308/landing.html" ;;
     *)       echo "Please open manually: http://localhost:3308" ;;
 esac
 
@@ -45,5 +45,5 @@ echo -e "\nPress Ctrl+C to stop server"
 wait $SERVER_PID
 
 # Changes made to the bash script
-# The url routes are now pointing to signup.html rather than index.html
+# The url routes are now pointing to landing.html rather than index.html
 # Also, make sure thet when running the php server, the ports are open.
